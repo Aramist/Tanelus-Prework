@@ -23,6 +23,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [x] Add constraints to storyboard elements to improve user experience across devices
+- [x] Substitute decimal keyboard for standard keyboard
 
 ## Video Walkthrough
 
