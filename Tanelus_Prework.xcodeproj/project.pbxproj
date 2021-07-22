@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		809D660126AA2EA600D054AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D660026AA2EA600D054AB /* AppDelegate.swift */; };
+		809D660326AA2EA600D054AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D660226AA2EA600D054AB /* SceneDelegate.swift */; };
+		809D660526AA2EA600D054AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D660426AA2EA600D054AB /* ViewController.swift */; };
+		809D660826AA2EA600D054AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809D660626AA2EA600D054AB /* Main.storyboard */; };
+		809D660A26AA2EA600D054AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 809D660926AA2EA600D054AB /* Assets.xcassets */; };
+		809D660D26AA2EA600D054AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809D660B26AA2EA600D054AB /* LaunchScreen.storyboard */; };
+		809D661826AA2EA700D054AB /* Tanelus_PreworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D661726AA2EA700D054AB /* Tanelus_PreworkTests.swift */; };
+		809D662326AA2EA700D054AB /* Tanelus_PreworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D662226AA2EA700D054AB /* Tanelus_PreworkUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		809D661426AA2EA700D054AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 809D65F526AA2EA600D054AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 809D65FC26AA2EA600D054AB;
+			remoteInfo = Tanelus_Prework;
+		};
+		809D661F26AA2EA700D054AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 809D65F526AA2EA600D054AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 809D65FC26AA2EA600D054AB;
+			remoteInfo = Tanelus_Prework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		809D65FD26AA2EA600D054AB /* Tanelus_Prework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tanelus_Prework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		809D660026AA2EA600D054AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		809D660226AA2EA600D054AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		809D660426AA2EA600D054AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		809D660726AA2EA600D054AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		809D660926AA2EA600D054AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		809D660C26AA2EA600D054AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		809D660E26AA2EA600D054AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		809D661326AA2EA700D054AB /* Tanelus_PreworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tanelus_PreworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		809D661726AA2EA700D054AB /* Tanelus_PreworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tanelus_PreworkTests.swift; sourceTree = "<group>"; };
+		809D661926AA2EA700D054AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		809D661E26AA2EA700D054AB /* Tanelus_PreworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tanelus_PreworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		809D662226AA2EA700D054AB /* Tanelus_PreworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tanelus_PreworkUITests.swift; sourceTree = "<group>"; };
+		809D662426AA2EA700D054AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		809D65FA26AA2EA600D054AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809D661026AA2EA700D054AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809D661B26AA2EA700D054AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		809D65F426AA2EA600D054AB = {
+			isa = PBXGroup;
+			children = (
+				809D65FF26AA2EA600D054AB /* Tanelus_Prework */,
+				809D661626AA2EA700D054AB /* Tanelus_PreworkTests */,
+				809D662126AA2EA700D054AB /* Tanelus_PreworkUITests */,
+				809D65FE26AA2EA600D054AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		809D65FE26AA2EA600D054AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				809D65FD26AA2EA600D054AB /* Tanelus_Prework.app */,
+				809D661326AA2EA700D054AB /* Tanelus_PreworkTests.xctest */,
+				809D661E26AA2EA700D054AB /* Tanelus_PreworkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		809D65FF26AA2EA600D054AB /* Tanelus_Prework */ = {
+			isa = PBXGroup;
+			children = (
+				809D660026AA2EA600D054AB /* AppDelegate.swift */,
+				809D660226AA2EA600D054AB /* SceneDelegate.swift */,
+				809D660426AA2EA600D054AB /* ViewController.swift */,
+				809D660626AA2EA600D054AB /* Main.storyboard */,
+				809D660926AA2EA600D054AB /* Assets.xcassets */,
+				809D660B26AA2EA600D054AB /* LaunchScreen.storyboard */,
+				809D660E26AA2EA600D054AB /* Info.plist */,
+			);
+			path = Tanelus_Prework;
+			sourceTree = "<group>";
+		};
+		809D661626AA2EA700D054AB /* Tanelus_PreworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				809D661726AA2EA700D054AB /* Tanelus_PreworkTests.swift */,
+				809D661926AA2EA700D054AB /* Info.plist */,
+			);
+			path = Tanelus_PreworkTests;
+			sourceTree = "<group>";
+		};
+		809D662126AA2EA700D054AB /* Tanelus_PreworkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				809D662226AA2EA700D054AB /* Tanelus_PreworkUITests.swift */,
+				809D662426AA2EA700D054AB /* Info.plist */,
+			);
+			path = Tanelus_PreworkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		809D65FC26AA2EA600D054AB /* Tanelus_Prework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 809D662726AA2EA700D054AB /* Build configuration list for PBXNativeTarget "Tanelus_Prework" */;
+			buildPhases = (
+				809D65F926AA2EA600D054AB /* Sources */,
+				809D65FA26AA2EA600D054AB /* Frameworks */,
+				809D65FB26AA2EA600D054AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tanelus_Prework;
+			productName = Tanelus_Prework;
+			productReference = 809D65FD26AA2EA600D054AB /* Tanelus_Prework.app */;
+			productType = "com.apple.product-type.application";
+		};
+		809D661226AA2EA700D054AB /* Tanelus_PreworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 809D662A26AA2EA700D054AB /* Build configuration list for PBXNativeTarget "Tanelus_PreworkTests" */;
+			buildPhases = (
+				809D660F26AA2EA700D054AB /* Sources */,
+				809D661026AA2EA700D054AB /* Frameworks */,
+				809D661126AA2EA700D054AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				809D661526AA2EA700D054AB /* PBXTargetDependency */,
+			);
+			name = Tanelus_PreworkTests;
+			productName = Tanelus_PreworkTests;
+			productReference = 809D661326AA2EA700D054AB /* Tanelus_PreworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		809D661D26AA2EA700D054AB /* Tanelus_PreworkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 809D662D26AA2EA700D054AB /* Build configuration list for PBXNativeTarget "Tanelus_PreworkUITests" */;
+			buildPhases = (
+				809D661A26AA2EA700D054AB /* Sources */,
+				809D661B26AA2EA700D054AB /* Frameworks */,
+				809D661C26AA2EA700D054AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				809D662026AA2EA700D054AB /* PBXTargetDependency */,
+			);
+			name = Tanelus_PreworkUITests;
+			productName = Tanelus_PreworkUITests;
+			productReference = 809D661E26AA2EA700D054AB /* Tanelus_PreworkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		809D65F526AA2EA600D054AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					809D65FC26AA2EA600D054AB = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					809D661226AA2EA700D054AB = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 809D65FC26AA2EA600D054AB;
+					};
+					809D661D26AA2EA700D054AB = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 809D65FC26AA2EA600D054AB;
+					};
+				};
+			};
+			buildConfigurationList = 809D65F826AA2EA600D054AB /* Build configuration list for PBXProject "Tanelus_Prework" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 809D65F426AA2EA600D054AB;
+			productRefGroup = 809D65FE26AA2EA600D054AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				809D65FC26AA2EA600D054AB /* Tanelus_Prework */,
+				809D661226AA2EA700D054AB /* Tanelus_PreworkTests */,
+				809D661D26AA2EA700D054AB /* Tanelus_PreworkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		809D65FB26AA2EA600D054AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809D660D26AA2EA600D054AB /* LaunchScreen.storyboard in Resources */,
+				809D660A26AA2EA600D054AB /* Assets.xcassets in Resources */,
+				809D660826AA2EA600D054AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809D661126AA2EA700D054AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809D661C26AA2EA700D054AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		809D65F926AA2EA600D054AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809D660526AA2EA600D054AB /* ViewController.swift in Sources */,
+				809D660126AA2EA600D054AB /* AppDelegate.swift in Sources */,
+				809D660326AA2EA600D054AB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809D660F26AA2EA700D054AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809D661826AA2EA700D054AB /* Tanelus_PreworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809D661A26AA2EA700D054AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809D662326AA2EA700D054AB /* Tanelus_PreworkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		809D661526AA2EA700D054AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 809D65FC26AA2EA600D054AB /* Tanelus_Prework */;
+			targetProxy = 809D661426AA2EA700D054AB /* PBXContainerItemProxy */;
+		};
+		809D662026AA2EA700D054AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 809D65FC26AA2EA600D054AB /* Tanelus_Prework */;
+			targetProxy = 809D661F26AA2EA700D054AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		809D660626AA2EA600D054AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				809D660726AA2EA600D054AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		809D660B26AA2EA600D054AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				809D660C26AA2EA600D054AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		809D662526AA2EA700D054AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		809D662626AA2EA700D054AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		809D662826AA2EA700D054AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tanelus_Prework/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aramis.dev.Tanelus-Prework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		809D662926AA2EA700D054AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tanelus_Prework/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aramis.dev.Tanelus-Prework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		809D662B26AA2EA700D054AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tanelus_PreworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aramis.dev.Tanelus-PreworkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tanelus_Prework.app/Tanelus_Prework";
+			};
+			name = Debug;
+		};
+		809D662C26AA2EA700D054AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tanelus_PreworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aramis.dev.Tanelus-PreworkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tanelus_Prework.app/Tanelus_Prework";
+			};
+			name = Release;
+		};
+		809D662E26AA2EA700D054AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tanelus_PreworkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aramis.dev.Tanelus-PreworkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tanelus_Prework;
+			};
+			name = Debug;
+		};
+		809D662F26AA2EA700D054AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tanelus_PreworkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aramis.dev.Tanelus-PreworkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tanelus_Prework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		809D65F826AA2EA600D054AB /* Build configuration list for PBXProject "Tanelus_Prework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				809D662526AA2EA700D054AB /* Debug */,
+				809D662626AA2EA700D054AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		809D662726AA2EA700D054AB /* Build configuration list for PBXNativeTarget "Tanelus_Prework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				809D662826AA2EA700D054AB /* Debug */,
+				809D662926AA2EA700D054AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		809D662A26AA2EA700D054AB /* Build configuration list for PBXNativeTarget "Tanelus_PreworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				809D662B26AA2EA700D054AB /* Debug */,
+				809D662C26AA2EA700D054AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		809D662D26AA2EA700D054AB /* Build configuration list for PBXNativeTarget "Tanelus_PreworkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				809D662E26AA2EA700D054AB /* Debug */,
+				809D662F26AA2EA700D054AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 809D65F526AA2EA600D054AB /* Project object */;
+}
