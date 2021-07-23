@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		809D660126AA2EA600D054AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D660026AA2EA600D054AB /* AppDelegate.swift */; };
 		809D660326AA2EA600D054AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D660226AA2EA600D054AB /* SceneDelegate.swift */; };
-		809D660526AA2EA600D054AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D660426AA2EA600D054AB /* ViewController.swift */; };
+		809D660526AA2EA600D054AB /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D660426AA2EA600D054AB /* TipViewController.swift */; };
 		809D660826AA2EA600D054AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809D660626AA2EA600D054AB /* Main.storyboard */; };
 		809D660A26AA2EA600D054AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 809D660926AA2EA600D054AB /* Assets.xcassets */; };
 		809D660D26AA2EA600D054AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809D660B26AA2EA600D054AB /* LaunchScreen.storyboard */; };
 		809D661826AA2EA700D054AB /* Tanelus_PreworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D661726AA2EA700D054AB /* Tanelus_PreworkTests.swift */; };
 		809D662326AA2EA700D054AB /* Tanelus_PreworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D662226AA2EA700D054AB /* Tanelus_PreworkUITests.swift */; };
+		80A2631C26AAE6C3004C440C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A2631B26AAE6C3004C440C /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 		809D65FD26AA2EA600D054AB /* Tanelus_Prework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tanelus_Prework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		809D660026AA2EA600D054AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		809D660226AA2EA600D054AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		809D660426AA2EA600D054AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		809D660426AA2EA600D054AB /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		809D660726AA2EA600D054AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		809D660926AA2EA600D054AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		809D660C26AA2EA600D054AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		809D661E26AA2EA700D054AB /* Tanelus_PreworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tanelus_PreworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		809D662226AA2EA700D054AB /* Tanelus_PreworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tanelus_PreworkUITests.swift; sourceTree = "<group>"; };
 		809D662426AA2EA700D054AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A2631B26AAE6C3004C440C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				809D660026AA2EA600D054AB /* AppDelegate.swift */,
 				809D660226AA2EA600D054AB /* SceneDelegate.swift */,
-				809D660426AA2EA600D054AB /* ViewController.swift */,
+				809D660426AA2EA600D054AB /* TipViewController.swift */,
 				809D660626AA2EA600D054AB /* Main.storyboard */,
 				809D660926AA2EA600D054AB /* Assets.xcassets */,
 				809D660B26AA2EA600D054AB /* LaunchScreen.storyboard */,
 				809D660E26AA2EA600D054AB /* Info.plist */,
+				80A2631B26AAE6C3004C440C /* SettingsViewController.swift */,
 			);
 			path = Tanelus_Prework;
 			sourceTree = "<group>";
@@ -258,9 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				809D660526AA2EA600D054AB /* ViewController.swift in Sources */,
+				809D660526AA2EA600D054AB /* TipViewController.swift in Sources */,
 				809D660126AA2EA600D054AB /* AppDelegate.swift in Sources */,
 				809D660326AA2EA600D054AB /* SceneDelegate.swift in Sources */,
+				80A2631C26AAE6C3004C440C /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
