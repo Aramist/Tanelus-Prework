@@ -21,21 +21,44 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.title = "Tip Controller"
+        let defaults = UserDefaults.standard
+        let now = Date()
+        if let lastBillTime = defaults.object(forKey: "billLastUpdated") as? Date {
+            let tenMinutesFurther = lastBillTime.addingTimeInterval(60 * 10)
+            if tenMinutesFurther > now {
+                let oldBill = defaults.double(forKey: "lastBill")
+                let oldBillString = oldBill > 0.0 ? String(format: "%.2f", oldBill) : ""
+                billAmountTextField.text = oldBillString
+            }
+        }
         self.updateLabels()
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         self.updateLabels()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        let defaults = UserDefaults.standard
+        let currentTime = Date()
+        defaults.setValue(currentTime, forKey: "billLastUpdated")
+        defaults.synchronize()
     }
     
     func updateLabels() {
         let defaults = UserDefaults.standard
         // Default to USD if the unit has not been set yet
-        let currencyUnit = defaults.string(forKey: "currencyUnit") ?? "$"
+        let currencyRow = defaults.integer(forKey: "currencyPickerRow")
+        let currencyUnit = SettingsViewController.currencyList[currencyRow]
         let bill = Double(billAmountTextField.text!) ?? 0
         let tipPercentages = [0.15, 0.18, 0.20]
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
+        
+        defaults.setValue(bill, forKey: "lastBill")
+        defaults.synchronize()
         
         currencySymbol.text = currencyUnit
         tipAmountLabel.text = String(format: "%@%.2f", currencyUnit, tip)

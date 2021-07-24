@@ -18,7 +18,13 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         // Do any additional setup after loading the view.
         self.currencyPicker.delegate = self
         self.currencyPicker.dataSource = self
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let defaults = UserDefaults.standard
+        let lastRow = defaults.integer(forKey: "currencyPickerRow")
+        self.currencyPicker.selectRow(lastRow, inComponent: 0, animated: true)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -35,8 +41,8 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let defaults = UserDefaults.standard
-        let selectedCurrency = SettingsViewController.currencyList[row]
-        defaults.set(selectedCurrency, forKey: "currencyUnit")
+//        let selectedCurrency = SettingsViewController.currencyList[row]
+        defaults.set(row, forKey: "currencyPickerRow")
         defaults.synchronize()
     }
     
