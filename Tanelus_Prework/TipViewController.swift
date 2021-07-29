@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var currencySymbol: UILabel!
 
     
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -47,14 +50,21 @@ class ViewController: UIViewController {
         defaults.synchronize()
     }
     
+    func updateTipController(withTips: [Int]) {
+        for i in 0..<withTips.count {
+            tipControl.setTitle("\(withTips[i])%", forSegmentAt: i)
+        }
+    }
+    
     func updateLabels() {
         let defaults = UserDefaults.standard
         // Default to USD if the unit has not been set yet
         let currencyRow = defaults.integer(forKey: "currencyPickerRow")
         let currencyUnit = SettingsViewController.currencyList[currencyRow]
         let bill = Double(billAmountTextField.text!) ?? 0
-        let tipPercentages = [0.15, 0.18, 0.20]
-        let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
+        let tipPresets = defaults.array(forKey: "presetTipValues") as? [Int] ?? [15, 18, 20]
+        updateTipController(withTips: tipPresets)
+        let tip = bill * Double(tipPresets[tipControl.selectedSegmentIndex]) / 100.0
         let total = bill + tip
         
         defaults.setValue(bill, forKey: "lastBill")

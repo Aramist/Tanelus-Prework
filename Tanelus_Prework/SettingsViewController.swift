@@ -10,6 +10,11 @@ import UIKit
 class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var currencyPicker: UIPickerView!
+    
+    @IBOutlet weak var topTipBox: UITextField!
+    @IBOutlet weak var midTipBox: UITextField!
+    @IBOutlet weak var bottomTipBox: UITextField!
+   
     static let currencyList: [String] = ["$","€","£","₫","₺","৳","¥","₪","₾","฿","₽","₹","₡","₱","₦","₲","₩","₴"]
     
     override func viewDidLoad() {
@@ -25,6 +30,11 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         let defaults = UserDefaults.standard
         let lastRow = defaults.integer(forKey: "currencyPickerRow")
         self.currencyPicker.selectRow(lastRow, inComponent: 0, animated: true)
+        
+        let tipPresets = defaults.array(forKey: "presetTipValues") as? [Int] ?? [15, 18, 20]
+        topTipBox.text = String(tipPresets[0])
+        midTipBox.text = String(tipPresets[1])
+        bottomTipBox.text = String(tipPresets[2])
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -41,9 +51,43 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let defaults = UserDefaults.standard
-//        let selectedCurrency = SettingsViewController.currencyList[row]
         defaults.set(row, forKey: "currencyPickerRow")
         defaults.synchronize()
+    }
+    
+    func getTipBoxes() -> [Int]{
+        var tipValues: [Int] = []
+        let textValues: [String] = [
+            topTipBox.text ?? "",
+            midTipBox.text ?? "",
+            bottomTipBox.text ?? ""
+        ]
+        
+        for textVal in textValues {
+            if let intVal = Int(textVal) {
+                tipValues.append(intVal)
+            } else {
+                tipValues.append(0)
+            }
+        }
+        tipValues.sort()
+        return tipValues
+    }
+    
+    
+    @IBAction func updateTipCache(_ sender: Any) {
+        var tipValues = getTipBoxes()
+        let defaults = [15, 18, 20]
+        for i in 0..<3 {
+            if tipValues[i] == 0 {
+                tipValues[i] = defaults[i]
+            }
+        }
+        tipValues.sort()
+        
+        let userdefaults = UserDefaults.standard
+        userdefaults.setValue(tipValues, forKey: "presetTipValues")
+        userdefaults.synchronize()
     }
     
     /*
