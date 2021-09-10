@@ -66,6 +66,8 @@ class TipViewController: UIViewController {
         self.isExpanded = Array(repeating: false, count: keyboardButtons.count)
         
         
+        billAmountLabel.numberOfLines = 0
+        billAmountLabel.sizeToFit()
         keyboardBackground.backgroundColor = colorPalette[0]
         for button in keyboardButtonsOutlet {
             button.setTitleColor(colorPalette[1], for: .normal)
@@ -109,6 +111,7 @@ class TipViewController: UIViewController {
         currencySymbol.text = currencyUnit
         tipAmountLabel.text = String(format: "%@%.2f", currencyUnit, tip)
         totalLabel.text = String(format: "%@%.2f", currencyUnit, total)
+        totalLabel.sizeToFit()
     }
     
     // Modified to allow the total field to be updated when the bill is changed, without having to modify the tipControl selector
@@ -138,6 +141,8 @@ class TipViewController: UIViewController {
                     billAmountLabel.text = String(oldText.prefix(upTo: strIndex))
                 }
             }
+            billAmountLabel.sizeToFit()
+            
             self.updateLabels()
         }
     }
