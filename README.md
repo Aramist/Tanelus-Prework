@@ -31,11 +31,9 @@ The following **additional** features are implemented:
 Here's a brief walkthrough of its features:
 
 
+![](https://i.imgur.com/pI6Rw3j.gif)
 
 
-
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
